@@ -37,7 +37,7 @@ jobs:
       - name: Installing Node js
       - uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '12'
       - name: Surge Install
       - run: npm install --global surge
       - name: Deploy Surge setup
