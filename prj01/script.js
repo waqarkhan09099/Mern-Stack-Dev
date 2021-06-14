@@ -29,7 +29,8 @@ checkRequirement=(inputArray)=>{
         if(input.value ===''){
             show_error(input,`${input.id} is required`);
         }
-        else if(!is_valid_email(input[1])){
+        else if(!is_valid_email(email.value)){
+            show_error(email,"Provide valid email");
         }
         else{
             show_success(input);
