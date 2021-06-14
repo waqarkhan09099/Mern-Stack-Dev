@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="link rel=preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">">
     <link rel="stylesheet" href="./stylesheet.css">
     
     <title>Form Validation</title>
@@ -12,28 +14,28 @@
 <body>
     <div class="container">
         <form action="" id="form" class="form">
-            <h1>Sign In</h1>
-            <div class="form-input ">
+            <h1>Sign Up</h1>
+            <div class="form-input" id="form-input">
                 <label for="user_name">User Name: </label>
-                <input type="text" class="user_name"  placeholder="Enter Your Name">
+                <input type="text" id="user_name"  placeholder="Enter Your Name">
                 <small>Error Message</small>
             </div>
-            <div class="form-input ">
+            <div class="form-input " id="form-input">
                 <label for="email">Email: </label>
-                <input type="text" class="email" placeholder="Enter Your Email">
+                <input type="text" id="email" placeholder="Enter Your Email">
                 <small>Error Message</small>
             </div>
-            <div class="form-input">
+            <div class="form-input"id="form-input">
                 <label for="password1">Password: </label>
-                <input type="password" class="password1" placeholder="Enter password">
+                <input type="password" id="password1" placeholder="Enter password">
                 <small>Error Message</small>
             </div>
-            <div class="form-input">
+            <div class="form-input"id="form-input">
                 <label for="password2">Confirm Password: </label>
-                <input type="text" class="password2" placeholder="Enter password again">
+                <input type="password" id="password2" placeholder="Enter password again">
                 <small>Error Message</small>
             </div>
-            <button>Submit</button>
+            <button class="submit">Submit</button>
         </form>
         <a href="../index.html"><button class="home">Home</button></a>
     </div>

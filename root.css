@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 63%;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ol{
+    list-style-type: style 2rem;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.index-list{
+    
+    text-decoration: none;
+    color: cadetblue;
+    font-weight: 500;
+
+}
