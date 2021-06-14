@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --success-color: limegreen;
+    --error-color:orangered;
+}
+
+body{
+    font-size: 63%;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background: url(./nat-4.jpg)no-repeat center/cover;   
+}
+
+.form{
+    width: 500px;
+    color: grey;
+    height: auto;
+    font-size: 16px;
+    background:white;
+    box-shadow: 2px 4px 10px black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+.form-input{
+    margin:10px 0;
+    display: block;
+}
+
+label,input,small,button{
+    display: block;
+    line-height: 30px;
+    width: 100%;
+}
+
+input{
+    padding: 5px 20px;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    border:2px solid lightslategrey;
+
+}
+
+small{
+    margin-top: 2px;
+    visibility: hidden;
+}
+
+.form-input input:focus{
+    outline: 0;
+    border-color: grey;
+}
+
+.form-input.success input{
+    border-color: var(--success-color);
+}
+
+.form-input.error input{
+    border-color: var(--error-color);
+}
+
+.form-input.error small{
+    visibility: visible;
+    color: var(--error-color);
+}
+
+button{
+    background-color: rgba(33, 126, 156, 0.788);
+    text-align: center;
+    outline: 0;
+    border-radius: 10px;
+    color: white;
+    padding: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.home{
+    background-color: lightblue;
+    border-radius: 0;
+    border-color: none;
+    outline: none;
+    width: 100%;
+}
