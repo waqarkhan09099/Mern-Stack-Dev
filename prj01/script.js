@@ -1,8 +1,8 @@
 const form=document.getElementById('form');
-const user_name=document.getElementById('user_name');
-const email=document.getElementById('email');
-const password=document.getElementById('password1')
-const confirm_password=document.getElementById('password2')
+const user_name=document.getElementById('User_Name');
+const email=document.getElementById('Email');
+const password=document.getElementById('Password')
+const confirm_password=document.getElementById('Confirm_Password')
 
 
 // All Functions
@@ -22,6 +22,21 @@ is_valid_email=(email)=>{
 show_success=(input)=>{
     const form_input=input.parentElement;
     form_input.className="form-input success";
+}
+Check_length=(input,min,max)=>{
+    if(input.value.length<min){
+        show_error(input,`${input.id} provide at minimum atleast ${min} character`);
+    }else  if(input.value.length>max){
+        show_error(input,`${input.id} provide atleast ${max} character`);
+    }else{
+        show_success(input);
+    }
+}
+
+match_password=(input,input1)=>{
+    if(input.value!==input1.value){
+        show_error(input1,"Password Does not Match");
+    } 
 }
 
 checkRequirement=(inputArray)=>{
@@ -76,4 +91,8 @@ form.addEventListener('submit',(e)=>{
     e.preventDefault();
     
     checkRequirement([user_name,email,password,confirm_password]);
+    Check_length(user_name,3,10);
+    Check_length(password,4,20);
+    Check_length(confirm_password,4,20);
+    match_password(password,confirm_password);
 })
