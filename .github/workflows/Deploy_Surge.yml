@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -41,4 +41,4 @@ jobs:
       - name: Surge Install
       - run: npm install --global surge
       - name: Deploy Surge setup
-      - run: surge ./ dispensable-chalk.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      - run: surge ./ Mern-Stack-Dev.surge.sh --token ${{ secrets.SURGE_TOKEN }}
