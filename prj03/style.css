@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+}
+    
+body{
+    background:linear-gradient(to top, rgba(255, 255, 255, 0.39) ,rgba(77, 245, 43, 0.5)50%) ,url(./nat-1-large.jpg)no-repeat center/cover;
+    font-size: 63%;
+    max-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2rem;
+    justify-content: center;
+    color: white;
+}
+
+h1{
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+}
+
+.screen{
+    cursor: pointer;
+    max-height: 70vh;
+    width: 100%;
+    margin: 0 auto;
+    height: 50%;
+}
+
+.video-player{
+    padding: 0;
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    align-self: center;
+    justify-content: center;
+    color: white;
+}
+
+.control{
+    /* padding: 0 rem; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(112, 128, 144, 0.623);
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.control .progress{
+    width: 75%;
+    margin-left: 0.9rem;
+}
+
+.btn{
+    background: transparent;
+    outline: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.control .timestamp{
+    width: 5%;
+    color:black;
+    font-size: 0.9rem;
+    padding-top: 6px;
+}
+
+@media (max-width){
+    .control,.video-player{
+        width: 90%;
+    }
+}

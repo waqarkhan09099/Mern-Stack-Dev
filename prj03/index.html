@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../Font Awesome/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="./progress.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>Video | Player</title>
+</head>
+<body>
+    <section class="video-player">
+        <h1>Video Player</h1>
+        <video src="../assests/file_example_MP4_1920_18MG.mp4" min="0" max="100" id="video" class="screen" poster="../assests/download.jpg"></video>
+        <div class="control">
+            <button class="btn" id='play'>
+                <i class="fas fa-play fa-2x"></i>
+            </button>
+            <button class="btn" id="stop">
+                <i class="fas fa-stop fa-2x"></i>
+            </button>
+            <input type="range" class="progress" step="0.1" id="progress">
+            <span class="timestamp" id="timestamp">00:00</span>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
