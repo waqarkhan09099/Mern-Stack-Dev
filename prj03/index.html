@@ -15,17 +15,16 @@
         <h1>Video Player</h1>
         <video src="../assests/file_example_MP4_1920_18MG.mp4" min="0" max="100" id="video" class="screen" poster="../assests/download.jpg"></video>
         <div class="control">
-            <button class="btn" id='play'>
+            <button class="btn play" id='play'>
                 <i class="fas fa-play fa-2x"></i>
             </button>
-            <button class="btn" id="stop">
-                <i class="fas fa-stop fa-2x"></i>
+            <button class="btn stop" id="stop">
+                <i class="fas fa-stop fa-2x" ></i>
             </button>
-            <input type="range" class="progress" step="0.1" id="progress">
+            <input type="range" class="progress" min="0" max="100" step="0.1" id="progress" value="0">
             <span class="timestamp" id="timestamp">00:00</span>
         </div>
     </section>
-
     <script src="./script.js"></script>
 </body>
 </html>

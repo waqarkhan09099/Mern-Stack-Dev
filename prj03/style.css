@@ -6,7 +6,7 @@
 }
     
 body{
-    background:linear-gradient(to top, rgba(255, 255, 255, 0.39) ,rgba(77, 245, 43, 0.5)50%) ,url(./nat-1-large.jpg)no-repeat center/cover;
+    background:linear-gradient(to top, rgba(255, 255, 255, 0.39) ,rgba(77, 245, 43, 0.5)50%) ,url(../assests/nat-1-large.jpg)no-repeat center/cover;
     font-size: 63%;
     max-height: 100vh;
     font-family: 'Open Sans', sans-serif;
@@ -49,16 +49,17 @@ h1{
     justify-content: space-around;
     background-color: rgba(112, 128, 144, 0.623);
     flex-wrap: wrap;
-    width: 100%;
+    width: 97%;
     margin: 0 auto;
 }
 
 .control .progress{
-    width: 75%;
+    width: 70%;
     margin-left: 0.9rem;
 }
 
 .btn{
+    width: 5%;
     background: transparent;
     outline: transparent;
     border: 0;
@@ -69,11 +70,22 @@ h1{
     width: 5%;
     color:black;
     font-size: 0.9rem;
-    padding-top: 6px;
+    padding: 6px 6px 0 0;
 }
 
-@media (max-width){
-    .control,.video-player{
-        width: 90%;
+@media (max-width:800px){
+    .control{
+        width: 100%;
     }
+    .video-player{
+        width:90%;
+    }
+}
+
+.play{
+    color: lightcoral;
+}
+
+.stop{
+    color: lightseagreen;
 }
