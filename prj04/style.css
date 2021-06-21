@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 63%;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    line-height: 2rem;
+    justify-content: center;
+    background: radial-gradient(gold 30%,orange 100%) no-repeat center/cover;
+}
+
+.container{
+    font-size: 1.1rem;
+    margin:0 auto;
+    max-width:50%;
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.currency-image{
+    width: 100%;
+    text-align: center;
+}
+
+.currency-image img{
+    width: 200px;   
+}
+
+.para{
+    margin: 2rem 0;
+    text-align: center;
+    width: 70%;
+    margin:0 auto;
+}
+
+.button-calculaterate{
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flip-btn{
+    width: 30%;
+    text-align: center;
+}
+
+.btn{
+    text-transform: uppercase;
+    color: goldenrod;
+    border-radius: 0.8rem;
+    border: 2px solid transparent;
+    box-shadow: 2px 3px 20px goldenrod ;
+    transition:all 0.6s ease;
+}
+
+.btn:hover{
+    border: 2px solid orange;
+    transform: scale(1.2);
+}
+
+.calculaterate{
+    padding: 1.4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 50%;
+    color: white;
+}
+
+select,input,button{
+    padding: 0.7rem 1rem;
+    margin: 1rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    outline: 0;
+    border: 0;
+}
+
+.currency{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.amount1{
+    background: transparent;
+    width: 10rem;
+    font-size: 1.5rem;
+    box-shadow: 2px 0 10px goldenrod;
+    color: orangered;
+}
