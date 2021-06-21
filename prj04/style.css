@@ -18,6 +18,7 @@ body{
 }
 
 .container{
+    position: relative;
     font-size: 1.1rem;
     margin:0 auto;
     max-width:50%;
@@ -33,7 +34,7 @@ body{
 }
 
 .currency-image img{
-    width: 200px;   
+    width: 200px;
 }
 
 .para{
@@ -58,6 +59,8 @@ body{
 }
 
 .btn{
+    display: inline-block;
+    cursor: pointer;
     text-transform: uppercase;
     color: goldenrod;
     border-radius: 0.8rem;
@@ -66,6 +69,7 @@ body{
     transition:all 0.6s ease;
 }
 
+
 .btn:hover{
     border: 2px solid orange;
     transform: scale(1.2);
@@ -73,6 +77,7 @@ body{
 
 .calculaterate{
     padding: 1.4rem;
+    cursor: pointer;
     text-align: center;
     font-size: 1.5rem;
     width: 50%;
@@ -81,11 +86,16 @@ body{
 
 select,input,button{
     padding: 0.7rem 1rem;
+    cursor: pointer;
     margin: 1rem 0.5rem;
     font-size: 1rem;
     border-radius: 1rem;
     outline: 0;
     border: 0;
+}
+
+select{
+    box-shadow: 0 3px 10px white;
 }
 
 .currency{
@@ -102,3 +112,16 @@ select,input,button{
     box-shadow: 2px 0 10px goldenrod;
     color: orangered;
 }
+
+.next{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.bitcoin-section{
+    border-top: 2px solid grey;
+    padding: 2rem 0;
+    height:100vh;
+    margin: 2rem 0;
+}
+
