@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 63%;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    line-height: 2rem;
+    background: radial-gradient(rgba(255, 217, 0, 0.7) 30%,rgba(255, 166, 0) 100%),url(../assests/images.png) no-repeat center/cover;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+aside{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding:0 7rem;
+    border-right: 3px solid grey;
+    justify-content: space-between;
+}
+
+.btn{
+    display: block;
+    margin: 0.5rem 0;
+    border-radius: 1rem;
+    outline: 0;
+    border: 2px solid grey;
+    box-shadow: 0 2px 10px grey ;
+    padding: 1rem 0.6rem;
+    font-size: 1.2rem;
+    color: rgb(94, 92, 88);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: translateY(2px);
+    border: 3px solid ;
+    color: white;
+    background: transparent;
+}
+
+.btn:active{
+    transform: translateY(-2px);
+}
+
+h2{
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.5rem;
+    border-bottom: 2px solid grey;
+    color: rgb(56, 55, 55);
+}
+
+.main{
+    width: 50%;
+    padding: 0.5rem 2rem;
+}
+
+h3{
+    padding: 0 6px;
+    margin: 0.8rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.2rem;
+    color:black;
+}
