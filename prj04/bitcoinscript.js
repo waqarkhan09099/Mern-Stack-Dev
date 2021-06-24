@@ -1,3 +1,4 @@
+
 const bitcurrencypickerone=document.getElementById('bitcurrencyOne');
 const bitcurrencypickertwo=document.getElementById('bitcurrencyTwo');
 const bitamountone=document.getElementById('bitamount1');
@@ -9,15 +10,16 @@ const bitrate=document.getElementById('bitcalculaterate');
 
 bitcalculate=()=>{
     const currencycodeone=bitcurrencypickerone.value;
-    const currencycodetwo=bitcurrencypickertwo.value;
+    
     fetch('https://api.coindesk.com/v1/bpi/currentprice.json')
         .then(res => res.json())
         .then(data => {
+            const currencycodetwo=bitcurrencypickertwo.value;
             const oneBitcoinRateInEuro = data.bpi.EUR.rate_float;
             fetch('https://api.exchangerate.host/latest')
                 .then(res => res.json())
                 .then(data => {
-                    const oneBitcoinInRequiredCurrency = oneBitcoinRateInEuro * data.rates[bitcurrencypickertwo];
+                    const oneBitcoinInRequiredCurrency = oneBitcoinRateInEuro * data.rates[bitcurrencycodetwo];
                     // let totalTargetBitcoinAmount;
                     // // 2 - Calculate Total Amount
                     // if (sourceBitcoinAmount.value === ""){
@@ -26,7 +28,7 @@ bitcalculate=()=>{
                     //     totalTargetBitcoinAmount = sourceBitcoinAmount.value * oneBitcoinInRequiredCurrency;
                     // }
                     // 3 - Update Input Amounts
-                    bitamounttwo.value =  totalTargetBitcoinAmount.toFixed(2);
+                    bitamounttwo.value =  oneBitcoinInRequiredCurrency*currencycodeone.value.toFixed(2);
         
                     // 4 - Update Rate Amounts
                     bitrate.innerText = oneBitcoinInRequiredCurrency.toFixed(2);

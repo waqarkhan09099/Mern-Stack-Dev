@@ -15,7 +15,7 @@ calculate=()=>{
         .then(data=>{
         const exchangeRate=data.conversion_rates[currencycodetwo];
         console.log(exchangeRate);
-        calculaterate.innerHTML=`1${currencycodeone} = ${exchangeRate}${currencycodetwo}`;
+        rate.innerHTML=`1${currencycodeone} = ${exchangeRate}${currencycodetwo}`;
         amounttwo.value= (exchangeRate*amountone.value).toFixed(2) ;
     });
 }
