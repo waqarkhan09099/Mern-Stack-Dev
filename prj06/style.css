@@ -63,6 +63,10 @@ nav img{
     
 }
 
+.apply:active{
+    transform: scale(1.2);
+}
+
 .nav-list-container li:first-of-type{
     border-top:2px solid rgba(128, 128, 128, 0.685) ;
 }
@@ -162,6 +166,8 @@ ol{
 
 .open-window{
     display: block;
+    transition: all 2s ease;
+ 
 }
 
 .close-window{
