@@ -7,6 +7,7 @@ const confirm_password=document.getElementById('Confirm_Password')
 
 // All Functions
 
+
 show_error=(input,message)=>{
     const form_input=input.parentElement;
     form_input.className="form-input error";
