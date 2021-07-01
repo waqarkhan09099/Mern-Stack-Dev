@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-size:  62.5%;
+    color: white;
+    background: darkolivegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+    margin: 1rem 0 2rem;
+}
+
+p{
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+}
+
+.game-container{
+    margin: 0 auto;
+    width: 900px;
+}
+
+svg{
+    color: white;
+}
+
+.gamefigure{
+    stroke: white;   
+    stroke-width: 5px;
+    stroke-linecap: round;
+}
+
+circle{
+    fill: transparent;
+}
+
+.svg-men{
+    display: none;
+}
+
+.winorlose{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    bottom: 0;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 100vh;
+    background:rgba(0, 0, 0, 0.4) ;
+}
+
+.winorlosemsg{
+    width: 180px;
+    background: rgb(113, 216, 230);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    padding: 1rem 0.4rem;
+    
+}
+
+.playagain{
+    background: white;
+    padding: 0.5rem;
+    margin-top: 5px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    color: lightsalmon;
+}
+
+.playagain:active{
+    transform: scale(0.9);
+}
+
+.wrongletter{
+    position: absolute;
+    top: 180px;
+    right: 80px;
+}
+.wrongletter p{
+    font-size: 2rem;
+}
+
+.wrongletter span{
+    display: inline-block;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+}
+
+.show{
+    display: block;
+}
+
+.word{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2rem;
+
+    
+}
+.notification{
+    transform: translateY(200px);
+    transition: all 1s;
+    margin: 0 auto ;
+    padding: 1rem 2rem;
+    display: none;
+    border: 2px solid grey;
+    border-radius:10px 10px 0 0 ;
+}
+
+.notification-show{
+    transform: translateY(90px);
+    transition: all 1s ease;
+    display:block;
+}
+
+.winword{
+    border-bottom: 2px solid lightseagreen;
+    margin: 0 10px;
+}
+
+.letter{
+    border-bottom: 2px solid blue;
+    display: inline-flex;
+    font-size: 36px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    width: 20px;
+    height: 50px;
+}
