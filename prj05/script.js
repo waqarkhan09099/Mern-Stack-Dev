@@ -4,7 +4,7 @@ const double = document.getElementById('doubleMoney');
 const showMillioners = document.getElementById('showMillionaries');
 const sort = document.getElementById('sort');
 const calculateTotal = document.getElementById('Calculate-total');
-const clear = document.getElementById('clear');
+const clear = document.getElementById('clearIt');
 
 
 fetchData();
@@ -47,7 +47,7 @@ function updateDOM(inputData = data) {
         const element = document.createElement('div');
         element.classList.add('name');
         element.innerHTML = `<strong>${item.name}</strong> ${formatCurrency(item.worth).fixed(3)}`;
-        main.appendChild(element);
+        main.appendChild(element); 
     });
 }
 
@@ -78,8 +78,7 @@ function totalamount(){
 }
     
 function clearIt() {
-    main.innerHTML="";
-    main.innerHTML='<h2><strong>Name</strong>Net Worth</h2>';
+    return true
 }
 
 // event listner lists shown below

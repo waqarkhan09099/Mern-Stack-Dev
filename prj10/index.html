@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../Font Awesome/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,700;1,400&family=Montserrat:ital,wght@0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <title>Audio Player</title>
+</head>
+<body>
+    <button class="home"><a href="../index.html" target="_blank"><i class="fas fa-undo" ></i></a></button>
+    <span class="author">Created by M.Waqar Khan</span>
+    <div class="music-constainer">
+        <div class="heading">
+            <h1>Music Player</h1>
+        </div>
+        <div class="title-container">
+            <h2 class="title" id="title">Title</h2>
+        </div>
+        <div class="audio">
+            <audio src="./audio/Titanic - My Heart Will Go On.mp3" id="audio"></audio>
+        </div>
+        <div class="music-disc-container " id="music-disc-contianer">
+            <div class="disc-container" id="disc-container"></div>
+            <img src="./images/Titanic - My Heart Will Go On.jpg"  id="img" alt="Titanic - My Heart Will Go On/jpg">
+
+        </div>
+        <div class="progress-bar-container" id="progress-bar-container">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="music-controls"id='musicControls'>
+            <button id="undo"><i class="fas fa-undo" ></i></button>
+            <button id="volume"><i class="fas fa-volume-up" ></i></button>
+            <button id="backward"><i class="fas fa-backward" ></i></button>
+            <button id="play"><i class="fas fa-play" ></i></button>
+            <!-- <i class="fas fa-pause"></i> -->
+            <button id="forward"><i class="fas fa-forward" ></i></button>
+            <!-- <i class="fas fa-volume-mute"></i> -->
+            <button id="shuffle"><i class="fas fa-random" ></i></button>
+            <button id='listArrow'><i class="fas fa-arrow-down" ></i></button>
+            
+        </div>
+    </div>
+    <section class="songs-list-container">
+        <h1>Songs List</h1>
+        <ul class="list" id="list">
+            <li class="songlist"><a href="" class="song-list-link">
+                <div class="list-img">
+                    <img src="./images/Titanic - My Heart Will Go On.jpg" alt="Titanic - My Heart Will Go On/jpg">
+                </div>
+                <div class="song-list-head">
+                    <h2 class="title" >Titanic - My Heart Will Go On</h2>
+                </div>
+            </a>
+            </li>
+            <li class="songlist"><a href="" class="song-list-link">
+                <div class="list-img">
+                    <img src="./images/TheFatRat - Monody.jpg" alt="TheFatRat - Monody/jpg">
+                </div>
+                <div class="song-list-head">
+                    <h2 class="title" >TheFatRat - Monody</h2>
+                </div>
+            </a>
+            </li>
+            <li class="songlist"><a href="" class="song-list-link">
+                <div class="list-img">
+                    <img src="./images/Imagine Dragons - Bad Liar.jpg" alt="Imagine Dragons - Bad Liar/jpg">
+                </div>
+                <div class="song-list-head">
+                    <h2 class="title" >Imagine Dragons - Bad Liar</h2>
+                </div>
+            </a>
+            </li>
+            <li class="songlist"><a href="" class="song-list-link">
+                <div class="list-img">
+                    <img src="./images/Cheerleader.jpg" alt="Cheerleader/jpg">
+                </div>
+                <div class="song-list-head">
+                    <h2 class="title" >Cheerleader</h2>
+                </div>
+            </a>
+            </li>
+            <li class="songlist"><a href="" class="song-list-link">
+                <div class="list-img">
+                    <img src="./images/Astronomia.jpg" alt="Astronomia/jpg">
+                </div>
+                <div class="song-list-head">
+                    <h2 class="title" >Astronomia</h2>
+                </div>
+            </a>
+            </li>
+            <li class="songlist"><a href="" class="song-list-link">
+                <div class="list-img">
+                    <img src="./images/Ampyx - Rise.jpg" alt="Ampyx - Rise/jpg">
+                </div>
+                <div class="song-list-head">
+                    <h2 class="title" >Ampyx - Rise</h2>
+                </div>
+            </a>
+            </li>
+        </ul>
+    </section>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

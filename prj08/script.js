@@ -84,7 +84,7 @@ ingredient=(meal)=>{
     <div class="food-information">
         ${meal.strCategory ? `<p class="info">Its made by : ${meal.strCategory}</p>` : ''};
         ${meal.strArea ? `<p class="info">First Introduce by : ${meal.strArea}</p>` : ''};
-        ${meal.strInstructions ? `<p class="info"><strong>Indtruction :</strong> ${meal.strInstructions}</p>` : ''};
+        ${meal.strInstructions ? `<p class="info"><strong>Instruction :</strong> ${meal.strInstructions}</p>` : ''};
         
     </div>
     `;
@@ -106,6 +106,30 @@ categorygallery.addEventListener('click',e=>{
         const mealId=containerpath.getAttribute('data-mealID');
         fetchdiscription(mealId);
     }
+});
+
+shufflebutton.addEventListener('click',e=>{
+    e.preventDefault();
+    categorydiscription.innerHTML='';
+    fetch('https://www.themealdb.com/api/json/v1/1/random.php')
+    .then(res=>res.json())
+    .then(data=>{
+        console.log(data); 
+        categorygallery.style.display='block';
+        categorygallery.innerHTML = data.meals.map(meal=>`
+                    
+                    <div class="random">
+                        <img src="${meal.strMealThumb}" alt="${meal.strCategory}"/>
+                        <div class="meal-info" data-mealID="${meal.idMeal}">
+                            <h3>${meal.strMeal}</h3>   
+                        </div>
+                    </div>
+        `
+
+        )
+        .join('');
+    })
+
 });
 
 
