@@ -12,6 +12,8 @@ const music_disc_contianer = document.getElementById('music-disc-contianer');
 const disc_container = document.getElementById('disc-container');
 const progressContainer = document.getElementById('progress-bar-container');
 const progress = document.getElementById('progress');
+const list=document.getElementById('list');
+const listheader=document.getElementById('listheader');
 
 
 const listofmusic = [
@@ -136,5 +138,11 @@ random.addEventListener('click', shuffleMusic);
 audio.addEventListener('timeupdate', updateProgress);
 progressContainer.addEventListener('click', setProgress);
 undo.addEventListener('click', undomusic);
-volumn.addEventListener('click', volumeset)
+volumn.addEventListener('click', volumeset);
+musicList.addEventListener('click',showlist=()=>{
+    list.style.display='block';
+    listheader.parentElement.style.display='block';
+    window.scrollBy(0, 600);
+});
+
 soundinitial(listofmusic[defaultindex]);
