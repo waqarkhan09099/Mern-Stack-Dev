@@ -177,10 +177,9 @@ a:active {
   display: none;
 }
 .songs-list-container {
- 
   width: 60%;
   height: auto;
-  margin-top: 6rem;
+  margin-top: 8rem;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -267,19 +266,19 @@ a:active {
     box-shadow: 0 0 20px lightseagreen;
   }
   20% {
-    box-shadow: 0 0 20px rgb(32, 178, 44);
+    box-shadow: 0 0 20px rgb(19, 236, 37);
   }
   40% {
-    box-shadow: 0 0 20px rgb(124, 32, 178);
+    box-shadow: 0 0 20px rgb(135, 8, 209);
   }
   60% {
-    box-shadow: 0 0 20px rgb(178, 90, 32);
+    box-shadow: 0 0 20px rgb(245, 102, 7);
   }
   80% {
-    box-shadow: 0 0 20px rgb(178, 32, 154);
+    box-shadow: 0 0 20px rgb(247, 8, 207);
   }
   100% {
-    box-shadow: 0 0 20px rgb(163, 178, 32);
+    box-shadow: 0 0 20px rgb(198, 219, 8);
   }
 }
 

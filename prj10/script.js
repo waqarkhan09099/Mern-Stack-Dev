@@ -22,7 +22,11 @@ const listofmusic = [
     "Imagine Dragons - Bad Liar",
     "Cheerleader",
     "Astronomia",
-    "Ampyx - Rise"
+    "Ampyx - Rise",
+    "Dirilis Ertugrul",
+    "Kurulus Osman",
+    "Pirates of the Caribbean",
+    "The Dark Knight"
 
 ]
 
@@ -53,6 +57,11 @@ function audioplay() {
     play.querySelector('i.fas').classList.remove('fa-play');
     play.querySelector('i.fas').classList.add('fa-pause');
     audio.play();
+    // if(audio.duration===audio.duration){
+    //     audio.pause();
+    //     play.querySelector('i.fas').classList.remove('fa-pause');
+    //     play.querySelector('i.fas').classList.add('fa-play');
+    // }
 }
 prevfunc = () => {
 
