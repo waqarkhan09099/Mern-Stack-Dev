@@ -30,7 +30,7 @@ nav{
     min-height: 100vh;
     z-index: 100;
     width: 20%;
-    transform: translateX(-240px);
+    transform: translateX(-260px);
 }
 
 body.nav-show{

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../Font Awesome/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.css">
+    <title>Typing | Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Typing Game</h1>
+        </div>
+        <div class="button-box">
+            <button class="start-game" id="startGame">
+                <a href="#" class="startlink" id="startlink">Start</a>
+            </button>
+        </div>
+        <div class="setting">
+            <div class="setting-head">
+                <h2>Setting</h2>
+            </div>
+            <div class="difficulty-mode">
+                <span class="mode-heading">Difficulty</span>
+                <div class="control">
+                    <div class="mode-div">
+                        <label for="easy">Easy</label>
+                        <input type="radio" id="easy" value="Easy" name="mode" checked>
+                    </div>
+                    <div class="mode-div">
+                        <label for="intermediate">Intermediate</label>
+                        <input type="radio" id="intermediate" value="Intermediate" name="mode">
+                    </div>
+                    <div class="mode-div">
+                        <label for="expert">Expert</label>
+                        <input type="radio" id="expert" value="E xpert" name="mode">
+                    </div>
+                </div>
+            </div>
+            <div class="type-mode">
+                <span class="type-mode-heading">Type</span>
+                <div class="control">   
+                    <div class="type-div">
+                        <label for="word">Word</label>
+                        <input type="radio" id="word" value="Word" name="type" checked>
+                    </div>
+                    <div class="type-div">
+                        <label for="sentences">Sentences</label>
+                        <input type="radio" id="sentences" value="sentences" name="type">
+                    </div>                    
+                    </div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="info-heading">
+                <h4>Info</h4>
+            </div>
+            <div class="info-discription" id="info">
+                <p>Since you choose, Difficulty: <span id="level">Easy</span> & Type: <span id="type">Words</span>. </p>
+                <p>So you will have, Time <span id="second">15s</span> & Bonus <span id="bonus">+5</span> on every
+                    success.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container1">
+        <div class="let-begins" id="letBegins">
+            <div class="began-heading">Game Started</div>
+            <div class="began-title"><p>You choose, Difficulty: <span id="level">Easy</span> & Type: <span id="type">Words</span>.</p></div>
+            <div class="time-score">
+                <div class="score">
+                    <p>Score:<span>0</span></p>
+                </div>
+                <div class="random-word">
+                    <h1>Word</h1>
+                </div>
+                <div class="time">
+                    <p>Time: <span>15s</span></p>
+                </div>
+            </div>
+            <div class="inputword">
+                <input type="text" id="random" value="input" placeholder="Enter the word">
+                <small>Wrong Word</small>
+            </div>
+            <button class="start-game" id="startGame">
+                <a href="#" class="startlink" id="startlink"><i class="fas fa-home"></i> Home</a>
+            </button>
+        </div>
+    </div>
+    <div class="result">
+        <h1>You Lost !!</h1>
+        <h2>Your Score is <span>0</span>.</h2>
+        <div class="buttons">
+            <button class="start-game" id="startGame">
+                <a href="#" class="startlink" id="startlink"> <i class="fas fa-undo"></i> Restart</a>
+            </button>
+            <button class="start-game" id="startGame">
+                <a href="#" class="startlink" id="startlink"> <i class="fas fa-home"></i> Home</a>
+            </button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
